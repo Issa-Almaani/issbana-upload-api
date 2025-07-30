@@ -1,19 +1,27 @@
 {
   "name": "cloudinary-upload-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Serverless function for file uploads to Cloudinary via Vercel.",
+  "main": "api/upload.js",
   "scripts": {
+    "start": "node api/upload.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cloudinary",
+    "upload",
+    "serverless",
+    "vercel",
+    "express"
+  ],
+  "author": "Your Name",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "cloudinary": "^2.7.0",
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "multer": "^2.0.2"
+    "dotenv": "^16.4.5",  <-- هذا هو السطر الجديد الذي تمت إضافته
+    "express": "^4.19.2",  <-- تم تحديث الإصدار ليتوافق مع أحدث إصدارات Express v4
+    "multer": "^1.4.5-lts.1"  <-- تم تحديث الإصدار ليتوافق مع أحدث إصدارات Multer v1
   }
 }
